@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styles from "./sorting.module.css";
-import { Button } from "../../../button/button";
+import { Button } from "../../../../components/button/button";
 
 export const Sorting = ({ onSorting }) => {
   const [isEnabled, setIsEnabled] = useState(false);

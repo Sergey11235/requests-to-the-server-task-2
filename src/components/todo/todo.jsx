@@ -11,7 +11,6 @@ export const Todo = ({
   onSave,
   onRemove,
 }) => {
-
   return (
     <div className={styles.todo}>
       <input
@@ -22,7 +21,11 @@ export const Todo = ({
       />
       <div className={styles.title}>
         {isEditing ? (
-          <input type="text" value={title} onChange={({ target }) => onTitleChange(target.value)} />
+          <input
+            type="text"
+            value={title}
+            onChange={({ target }) => onTitleChange(target.value)}
+          />
         ) : (
           <div onClick={onEdit}>{title}</div>
         )}
